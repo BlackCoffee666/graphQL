@@ -1,12 +1,12 @@
 {
     "name": "apollo-server",
     "version": "1.0.0",
-    "main": "node index.js",
+    "main": "node start/server/src/index.js",
     "description": "",
     "scripts": {
       "test": "jest",
-      "start": "node index.js",
-      "start:ci": "node index.js"
+      "start": "node start/server/src/index.js",
+      "start:ci": "node start/server/src/index.js"
     },
     "author": "",
     "license": "ISC",
