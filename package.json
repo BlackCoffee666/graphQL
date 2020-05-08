@@ -1,5 +1,5 @@
 {
-    "name": "apollo-server",
+    "name": "graphqlapilab9",
     "version": "1.0.0",
     "main": "node start/server/src/index.js",
     "description": "",
