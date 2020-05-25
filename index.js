@@ -9,9 +9,12 @@ const store = createStore();
 
 const port = process.env.PORT || 4000;
 
+const stripe = require("stripe")("pk_test_aAD0mNefv1oc0jJSg6IBM1ln00HtDt");
+
 const server = new ApolloServer({
   context: async ({ req }) => {
     // simple auth check on every request
+    console.log(stripe);
     const auth = (req.headers && req.headers.authorization) || "";
     const email = Buffer.from(auth, "base64").toString("ascii");
     if (!isEmail.validate(email)) return { user: null };
